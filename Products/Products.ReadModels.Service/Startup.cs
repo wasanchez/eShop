@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Http;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -41,7 +42,10 @@ namespace Products.ReadModels.Service
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc( routes =>
+            {
+                routes.MapRoute("DefaultApi", "api/{controller}/{id}");
+            });
         }
     }
 }
