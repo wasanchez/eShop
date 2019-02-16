@@ -6,6 +6,14 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="DataTransferObjects\" />
+    <Folder Include="DataTransferObjects\Commands\" />
+    <Folder Include="DataTransferObjects\Commands\Product\" />
+    <Folder Include="MicroServices\" />
+    <Folder Include="MicroServices\Products\" />
+    <Folder Include="MicroServices\Products\Commands\" />
+    <Folder Include="MicroServices\Products\Domain\" />
+    <Folder Include="MicroServices\Products\Handlers\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -13,4 +21,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj" />
+  </ItemGroup>
 </Project>
