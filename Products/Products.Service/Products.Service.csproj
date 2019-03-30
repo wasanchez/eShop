@@ -23,5 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj" />
+    <ProjectReference Include="..\Products.Common\Products.Common.csproj" />
   </ItemGroup>
 </Project>

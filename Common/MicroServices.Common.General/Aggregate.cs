@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MicroServices.Common.General
 {
 
     public abstract class Aggregate
     {
+        public Guid Id { get; protected set; }
 
         internal readonly List<Event> _events = new List<Event>();
         private int _version = -1;

@@ -4,21 +4,21 @@ using Newtonsoft.Json;
 
 namespace Products.Common.Events
 {
-    public class ProducCreatedtEvent : Event
+    public class ProductCreated : Event
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
 
         [JsonConstructor]
-        private ProducCreatedtEvent(Guid id, string name, string description, decimal price, int version) 
+        private ProductCreated(Guid id, string name, string description, decimal price, int version) 
         : this (id, name, description, price) 
         {
            
             Version = version;
         }
 
-        public ProducCreatedtEvent(Guid id, string name, string description, decimal price)
+        public ProductCreated(Guid id, string name, string description, decimal price)
         {
             Id = id;
             Name = name;
