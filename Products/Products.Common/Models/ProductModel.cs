@@ -2,7 +2,7 @@
 
 namespace Products.Common.Models
 {
-    public class ProductModel : ReadObject
+    public class ProductModel : ReadModel
     {
         public string Name { get; set; }
         public string Description { get; set; }
