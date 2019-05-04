@@ -6,28 +6,27 @@ namespace MicroServices.Common.Repository
 {
     public class InMemoryReadModelRepository<T> : IReadModelRepository<T> where T : ReadModel
     {
-        public InMemoryReadModelRepository()
-        {
-        }
+        private readonly Dictionary<Guid, T> items = new Dictionary<Guid, T>();
+         
 
         public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return items.Values;
         }
 
         public T GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return items[id];
         }
 
         public void Insert(T model)
         {
-            throw new NotImplementedException();
+            items.Add(model.Id, model);
         }
 
         public void Update(T model)
         {
-            throw new NotImplementedException();
+            items[model.Id] = model;
         }
     }
 }
