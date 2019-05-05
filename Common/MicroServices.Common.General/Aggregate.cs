@@ -23,10 +23,15 @@ namespace MicroServices.Common.General
             this._events.Clear();
         }
 
+
+        public void LoadStateFromHistory(IEnumerable<Event> history)
+        {
+            foreach (var item in history) ApplyEvent(item, false);
+        }
+
         protected internal void ApplyEvent(Event @event)
         {
             this.ApplyEvent(@event, true);
-
         }
 
         protected virtual void ApplyEvent(Event @event, bool isNew)
@@ -42,8 +47,6 @@ namespace MicroServices.Common.General
                 Version = @event.Version;
             }
         }
-
-
     }
 
     public abstract class ReadModelAggregate : Aggregate
