@@ -13,12 +13,12 @@ namespace MicroServices.Common.Repository
     {
         
         private readonly IMessageBus bus;
-        private readonly List<Event> latestEventes = new List<Event>();
+        private readonly List<Event> latestEvents = new List<Event>();
         private readonly JsonSerializerSettings jsonSerilizerSettings;
 
         public Dictionary<Guid,List<string>> EventStore { get; private set; }
 
-        public List<Event> LatestEventes => latestEventes;
+        public List<Event> LatestEvents => latestEvents;
 
         public InMemoryRepository(IMessageBus bus)
         {
@@ -63,9 +63,9 @@ namespace MicroServices.Common.Repository
                 }
                 existingEvents.AddRange(eventsSerialized);
             }
-            latestEventes.AddRange(eventsToSave);
+            LatestEvents.AddRange(eventsToSave);
 
-            PublishEvents(latestEventes);
+            PublishEvents(LatestEvents);
             aggregate.MarkEventsAsCommitted();
         }
 
