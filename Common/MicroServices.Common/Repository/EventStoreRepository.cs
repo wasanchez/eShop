@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EventStore.ClientAPI;
@@ -59,7 +60,7 @@ namespace MicroServices.Common.Repository
         }
 
         /// <summary>
-        /// Gets the by identifier async.
+        /// Gets the Aggregate by identifier async.
         /// </summary>
         /// <returns>The by identifier async.</returns>
         /// <param name="id">Identifier.</param>
@@ -118,12 +119,30 @@ namespace MicroServices.Common.Repository
 
         public void Save<TAggregate>(TAggregate aggregate) where TAggregate : Aggregate
         {
-            throw new NotImplementedException();
+            SaveAsync<TAggregate>(aggregate).Wait();
         }
 
-        public Task SaveAsync<TAggregate>(TAggregate aggregate) where TAggregate : Aggregate
+        public async Task SaveAsync<TAggregate>(TAggregate aggregate) where TAggregate : Aggregate
         {
-            throw new NotImplementedException();
+            var commitHeaders = new Dictionary<string, object>
+           {
+               {CommitIdHeader, aggregate.Id},
+               {AggregateClrTypeHeader, aggregate.GetType().AssemblyQualifiedName }
+           };
+
+            var streamName = AggregateIdToStreamName(aggregate.GetType(), aggregate.Id);
+            var eventsToPublish = aggregate.GetUncommittedEvents();
+            var newEvents = eventsToPublish.Cast<object>().ToList();
+            var originalVersion = aggregate.Version - newEvents.Count();
+            var expectedVersion = originalVersion == -1 ? ExpectedVersion.NoStream : originalVersion;
+
+            var eventsToSave = newEvents.Select(e => ToEventData(aggregate.Id, e, commitHeaders)).ToList();
+
+            if (eventsToSave.Count() < WritePageSize)
+            {
+                await eventStoreConnection.AppendToStreamAsync(streamName, expectedVersion, eventsToSave);
+            }
+
         }
 
         private string AggregateIdToStreamName(Type type, Guid id)
@@ -157,6 +176,24 @@ namespace MicroServices.Common.Repository
                 throw new EventDeserializationException((string)eventCtrlTypeName, metadataString);
 
             return @event;
+        }
+
+        private static EventData ToEventData(Guid id, object @event, Dictionary<string, object> headers)
+        {
+            var data = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(@event, serializationSettings));
+
+            var eventHeaders = new Dictionary<string, object>(headers)
+            {
+                {
+                    EventClrTypeHeader, @event.GetType().AssemblyQualifiedName
+
+                }
+            };
+
+            var metadata = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(@eventHeaders, serializationSettings));
+            var typeName = @event.GetType().Name;
+
+            return new EventData(id, typeName, true, data, metadata);
         }
     }
 }

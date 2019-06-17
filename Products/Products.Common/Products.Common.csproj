@@ -12,6 +12,6 @@
     <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 </Project>
