@@ -8,7 +8,7 @@ namespace MicroServices.Common.MessageBus
     /// <summary>
     /// Rubbit mq bus.
     /// </summary>
-    public class RubbitMqBus : IMessageBus
+    public class RabbitMqBus : IMessageBus
     {
         private readonly IBus bus;
 
@@ -22,7 +22,7 @@ namespace MicroServices.Common.MessageBus
         /// Initializes a new instance of the <see cref="T:MicroServices.Common.MessageBus.RubbitMqBus"/> class.
         /// </summary>
         /// <param name="bus">Bus.</param>
-        public RubbitMqBus(IBus bus)
+        public RabbitMqBus(IBus bus)
         {
             if (bus == null) throw new NullReferenceException("bus");
             this.bus = bus;

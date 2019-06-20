@@ -1,16 +1,20 @@
 ﻿using System;
-using System.Web.Http;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using EasyNetQ;
+using MicroServices.Common.General;
+using MicroServices.Common.General.Util;
+using MicroServices.Common.MessageBus;
+using MicroServices.Common.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Products.Common.Models;
+using Products.ReadModels.Service.Views;
+using StackExchange.Redis;
+using Aggregate = MicroServices.Common.General.Aggregate;
+
 
 namespace Products.ReadModels.Service
 {
@@ -46,6 +50,33 @@ namespace Products.ReadModels.Service
             {
                 routes.MapRoute("DefaultApi", "api/{controller}/{id}");
             });
+        }
+
+        private void ConfigureHandlers()
+        {
+            var redis = ConnectionMultiplexer.Connect("localhost");
+            var productView = new ProductView(new RedisRepository<ProductModel>(redis.GetDatabase()));
+
+            var eventMapping = new EventHandlerDiscovery().Scan(productView).Handlers;
+
+            var subscriptionName = "Product_readmodel";
+            var topicFilter = "Product.Common.Events";
+
+            var bus = RabbitHutch.CreateBus("host=localhost");
+
+            bus.Subscribe<PublishedMessage>(subscriptionName, m =>
+            {
+                Aggregate handler;
+                var messageType = Type.GetType(m.MessageTypeName);
+                var handlerFound = eventMapping.TryGetValue(messageType, out handler);
+                if (handlerFound)
+                {
+                    var @event = JsonConvert.DeserializeObject(m.SerialisedMessage, messageType);
+                    handler.AsDynamic().ApplyEvent(@event, ((Event)@event).Version);
+                }
+            }, q => q.WithTopic(topicFilter));
+
+            ServiceLocator.Bus = new RabbitMqBus(bus);
         }
     }
 }
