@@ -23,6 +23,7 @@ namespace Products.ReadModels.Service
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ConfigureHandlers();
         }
 
         public IConfiguration Configuration { get; }
@@ -77,6 +78,7 @@ namespace Products.ReadModels.Service
             }, q => q.WithTopic(topicFilter));
 
             ServiceLocator.Bus = new RabbitMqBus(bus);
+            ServiceLocator.ProductView = productView;
         }
     }
 }

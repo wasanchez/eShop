@@ -38,6 +38,7 @@ namespace MicroServices.Common.Repository
         /// <param name="id">Identifier.</param>
         public T GetById(Guid id)
         {
+
             var result = database.StringGetAsync(Key(id)).Result;
             return JsonConvert.DeserializeObject<T>(result);
         }

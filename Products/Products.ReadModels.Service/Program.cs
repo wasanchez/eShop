@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Owin;
 
 namespace Products.ReadModels.Service
 {
@@ -20,5 +15,26 @@ namespace Products.ReadModels.Service
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+    }
+
+    public class ProductReadModelSercie
+    {
+
+        private IWebHostBuilder webApp;
+        const string baseUri = "http://localhost:8181";
+
+        public void Start(string[] args)
+        {
+            Console.WriteLine("Starting Product Read Model Services...");
+            webApp = WebHost.CreateDefaultBuilder(args).UseStartup<Startup>();
+            webApp.Start(baseUri);
+        }
+
+        public void Stop()
+        {
+            
+
+        }
+
     }
 }
