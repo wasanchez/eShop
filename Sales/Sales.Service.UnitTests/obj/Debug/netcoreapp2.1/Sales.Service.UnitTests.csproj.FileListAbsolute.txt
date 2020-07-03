@@ -1,0 +1,9 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/bin/Debug/netcoreapp2.1/Sales.Service.UnitTests.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/bin/Debug/netcoreapp2.1/Sales.Service.UnitTests.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/bin/Debug/netcoreapp2.1/Sales.Service.UnitTests.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.csprojAssemblyReference.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Service.UnitTests/obj/Debug/netcoreapp2.1/Sales.Service.UnitTests.pdb

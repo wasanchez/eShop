@@ -1,0 +1,12 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/bin/Debug/netcoreapp2.1/MicroServices.Common.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/bin/Debug/netcoreapp2.1/MicroServices.Common.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/bin/Debug/netcoreapp2.1/MicroServices.Common.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/bin/Debug/netcoreapp2.1/MicroServices.Common.General.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/bin/Debug/netcoreapp2.1/MicroServices.Common.General.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.csprojAssemblyReference.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.csproj.CopyComplete
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/Debug/netcoreapp2.1/MicroServices.Common.pdb

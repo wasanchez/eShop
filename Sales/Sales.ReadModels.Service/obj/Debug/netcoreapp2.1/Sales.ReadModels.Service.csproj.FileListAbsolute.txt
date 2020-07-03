@@ -1,0 +1,8 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/bin/Debug/netcoreapp2.1/Sales.ReadModels.Service.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/bin/Debug/netcoreapp2.1/Sales.ReadModels.Service.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/bin/Debug/netcoreapp2.1/Sales.ReadModels.Service.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/obj/Debug/netcoreapp2.1/Sales.ReadModels.Service.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/obj/Debug/netcoreapp2.1/Sales.ReadModels.Service.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/obj/Debug/netcoreapp2.1/Sales.ReadModels.Service.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/obj/Debug/netcoreapp2.1/Sales.ReadModels.Service.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.ReadModels.Service/obj/Debug/netcoreapp2.1/Sales.ReadModels.Service.pdb

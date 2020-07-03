@@ -1,0 +1,14 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/Products.Service.UnitTests.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/Products.Service.UnitTests.runtimeconfig.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/Products.Service.UnitTests.runtimeconfig.dev.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/Products.Service.UnitTests.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/bin/Debug/netcoreapp2.2/Products.Service.UnitTests.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.csprojAssemblyReference.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.Service.UnitTests/obj/Debug/netcoreapp2.2/Products.Service.UnitTests.pdb

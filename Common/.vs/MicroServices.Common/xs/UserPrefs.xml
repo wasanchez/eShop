@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.ItemProperties.MicroServices.Common.General FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MicroServices.Common.General/Class1.cs">
+    <Files>
+      <File FileName="MicroServices.Common/Class1.cs" Line="1" Column="1" />
+      <File FileName="MicroServices.Common.General/Class1.cs" Line="9" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MicroServices.Common FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

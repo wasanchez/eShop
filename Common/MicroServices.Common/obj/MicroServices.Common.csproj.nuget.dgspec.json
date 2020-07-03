@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/MicroServices.Common.csproj": {}
+  },
+  "projects": {
+    "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/MicroServices.Common.General.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/MicroServices.Common.General.csproj",
+        "projectName": "MicroServices.Common.General",
+        "projectPath": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/MicroServices.Common.General.csproj",
+        "packagesPath": "/Users/wsanchez/.nuget/packages/",
+        "outputPath": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/wsanchez/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/MicroServices.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/MicroServices.Common.csproj",
+        "projectName": "MicroServices.Common",
+        "projectPath": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/MicroServices.Common.csproj",
+        "packagesPath": "/Users/wsanchez/.nuget/packages/",
+        "outputPath": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/wsanchez/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/MicroServices.Common.General.csproj": {
+                "projectPath": "/Users/wsanchez/Projects/eShop/AllMicroservice/Common/MicroServices.Common.General/MicroServices.Common.General.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[3.5.1, )"
+            },
+            "EventStore.Client": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NewId": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.601, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/bin/Debug/netcoreapp2.1/Sales.Common.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/bin/Debug/netcoreapp2.1/Sales.Common.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/bin/Debug/netcoreapp2.1/Sales.Common.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/obj/Debug/netcoreapp2.1/Sales.Common.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/obj/Debug/netcoreapp2.1/Sales.Common.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/obj/Debug/netcoreapp2.1/Sales.Common.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/obj/Debug/netcoreapp2.1/Sales.Common.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Sales/Sales.Common/obj/Debug/netcoreapp2.1/Sales.Common.pdb

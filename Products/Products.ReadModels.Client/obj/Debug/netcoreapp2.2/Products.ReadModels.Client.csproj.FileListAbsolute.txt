@@ -1,0 +1,9 @@
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/bin/Debug/netcoreapp2.2/Products.ReadModels.Client.deps.json
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/bin/Debug/netcoreapp2.2/Products.ReadModels.Client.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/bin/Debug/netcoreapp2.2/Products.ReadModels.Client.pdb
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.csprojAssemblyReference.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.csproj.CoreCompileInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.AssemblyInfoInputs.cache
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.AssemblyInfo.cs
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.dll
+/Users/wsanchez/Projects/eShop/AllMicroservice/Products/Products.ReadModels.Client/obj/Debug/netcoreapp2.2/Products.ReadModels.Client.pdb
