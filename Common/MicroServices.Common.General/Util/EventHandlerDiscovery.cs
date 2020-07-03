@@ -28,8 +28,6 @@ namespace MicroServices.Common.General.Util
             }
 
             return this;
-
-
         }
     }
 }

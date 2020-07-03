@@ -1,5 +1,4 @@
-﻿using System;
-namespace MicroServices.Common.General
+﻿namespace MicroServices.Common.General
 {
     public interface IHandler<in T> where T: Event
     {

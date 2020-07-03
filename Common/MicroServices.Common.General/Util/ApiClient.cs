@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -35,14 +36,14 @@ namespace MicroServices.Common.General.Util
         }
 
         /// <summary>
-        /// Loads the many.
+        /// Load multiples items
         /// </summary>
-        /// <returns>The many.</returns>
-        /// <param name="uri">URI.</param>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        public static IEquatable<T> LoadMany<T>(string uri)
+        /// <typeparam name="T">Model type</typeparam>
+        /// <param name="uri">URI</param>
+        /// <returns>A list of items</returns>
+        public static IEnumerable<T> LoadMany<T>(string uri)
         {
-            return Load<IEquatable<T>>(uri);
+            return Load<IEnumerable<T>>(uri);
         }
 
         /// <summary>
